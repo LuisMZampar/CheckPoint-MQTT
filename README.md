@@ -35,27 +35,44 @@ Este código implementa a leitura de um sensor de temperatura e umidade DHT22 co
 
 Placa: ESP32
 Sensor: DHT22 para leitura de temperatura e umidade
+
 Protocolo: MQTT para envio dos dados para a nuvem
+
 Broker: Mosquitto (servidor público test.mosquitto.org)
+
 Definições e Variáveis:
+
 DHTPIN (21): Define o pino GPIO da ESP32 onde o sensor DHT22 está conectado.
+
 DHTTYPE: Define o tipo de sensor DHT (DHT22).
+
 ssid: O nome da rede Wi-Fi à qual a ESP32 vai se conectar.
+
 password: A senha da rede Wi-Fi (neste caso, vazia para conectar na rede "Wokwi-GUEST").
+
 mqtt_server: Endereço do broker MQTT público (Mosquitto).
+
 mqtt_topic: Tópico MQTT onde as mensagens do sensor DHT serão publicadas.
+
 Bibliotecas Utilizadas:
+
 WiFi.h: Para a conexão da ESP32 à rede Wi-Fi.
+
 PubSubClient.h: Para o protocolo MQTT, possibilitando a comunicação com o broker.
+
 DHT.h: Para a leitura de dados do sensor de temperatura e umidade.
 
 Funções:
 setup():
 
 Inicializa a comunicação serial para monitoramento no console.
+
 Inicializa o sensor DHT.
+
 Configura a conexão Wi-Fi.
+
 Configura o cliente MQTT para se conectar ao broker e assina o tópico definido.
+
 setup_wifi():
 
 Conecta a ESP32 à rede Wi-Fi. Um loop garante que o código continue tentando conectar até obter sucesso. A função também imprime no console o progresso da conexão.
