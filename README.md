@@ -99,8 +99,11 @@ Repetição: O processo se repete continuamente, a cada 5 segundos.
 O formato da mensagem enviada é:
 
 {
+
   "temperatura": <valor_da_temperatura>,
+  
   "umidade": <valor_da_umidade>
+  
 }
 
 # Possíveis Erros:
@@ -110,9 +113,13 @@ Se a leitura do sensor falhar (isnan), uma mensagem de erro será exibida no con
 Exemplo de Saída Serial:
 
 Conectando-se a Wokwi-GUEST
+
 WiFi conectado!
+
 Tentando conexão MQTT...
+
 Conectado ao broker MQTT
+
 {"temperatura":25.00, "umidade":60.00}
 
 # Modificações Futuras:
