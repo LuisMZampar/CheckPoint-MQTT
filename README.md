@@ -11,10 +11,12 @@
 ## Passos
 
 No CMD
-npm install -g node-red 
+npm install -g node-red   
+
 node-red
 
 http://127.0.0.1:1880/
+
 mqtt://test.mosquitto.org:1883
 
 ![image](https://github.com/user-attachments/assets/c5d67462-d928-4457-8bcf-1a30be300d63)
